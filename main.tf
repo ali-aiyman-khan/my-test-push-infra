@@ -6,14 +6,14 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "my-tfstate-71929"
-    key   = "dev/terraform.tfstate"
-    region = "us-east-1"
+    bucket       = "my-tfstate-71929"
+    key          = "dev/terraform.tfstate"
+    region       = "us-east-1"
     use_lockfile = true
   }
 }
 
 resource "aws_s3_bucket" "hello" {
-  count = 3
+  count  = 3
   bucket = "my-hello-test-71929-${count.index}"
 }
