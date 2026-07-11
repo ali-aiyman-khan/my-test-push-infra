@@ -12,7 +12,7 @@ permissions:
   pull-requests: write   # needed so the workflow can post PR comments
 
 env:
-  TF_WORKING_DIR: **
+  TF_WORKING_DIR: .
 
 jobs:
   plan:
