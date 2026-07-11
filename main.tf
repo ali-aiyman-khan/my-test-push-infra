@@ -14,5 +14,6 @@ terraform {
 }
 
 resource "aws_s3_bucket" "hello" {
-  bucket = "my-hello-test-71929"
+  count = 2
+  bucket = "my-hello-test-71929-${count.index}"
 }

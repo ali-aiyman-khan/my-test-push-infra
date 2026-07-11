@@ -8,9 +8,7 @@ on:
       - "modules/**"
   push:
     branches: [main]
-    paths:
-      - "environments/dev/**"
-      - "modules/**"
+
 
 permissions:
   contents: read
